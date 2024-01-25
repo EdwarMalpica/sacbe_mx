@@ -1,0 +1,67 @@
+#sectionFour{
+    background: var(--lightYellow);
+}
+#imgWrapperOfSectionFour img{
+    position: relative;
+    right: 13vh;
+    block-size: 60vh;
+}
+
+#contentImageWrapperrlOfSectionFour{
+    gap: 0vh;
+}
+
+#contentWrapperrlOfSectionFour {
+    position: relative;
+    right: 5vh;
+    top: 9vh;
+}
+
+#contentWrapperrlOfSectionFour .headingTwo {
+    inline-size: 50vw;
+    font-size: 12.5vh;
+}
+
+.twoColumnsOfSectionFour {
+    display: flex;
+    margin-block-start: 5vh;
+    inline-size: 81vh;
+    gap: 12vh;
+}
+.twoColumnsOfSectionFour h3{
+    font-size: 5vh;
+}
+.colorAqua{
+    color: var(--aqua);
+}
+.twoColumnsOfSectionFour p {
+    font-size: 2vh;
+}
+
+
+@media (orientation:portrait) {
+    #imgWrapperOfSectionFour img{
+        position: relative;
+        left: 2vw;
+        block-size: 33vh;
+        padding: 1vh 1vw 1.8vh;
+    }
+
+    #headingTwoOfSectionFour {
+        display: none;
+    }
+
+    .contentImageWrapperrl h3 {
+        font-size: 5.4vh
+    }
+
+    .headingThree {
+        display: block;
+        text-align: center;
+    }
+    .contentImageWrapperrl p{
+        font-size:1.68vh;
+        margin-block-start: 1vh;
+        inline-size: 35vh;
+    }
+}

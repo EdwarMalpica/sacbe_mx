@@ -1,0 +1,84 @@
+#sectionSix{
+    background: var(--darkCyan);
+}
+
+#imgWrapperOfSectionSix {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+    inline-size: 45vw;
+    block-size: 100vh;
+    bottom: 2vh;
+}
+
+#headingTwoOfSectionSix {
+    inline-size: 59vh;
+    line-height: 7vh;
+    color: var(--lightYellow);
+}
+
+#headingTwoOfSectionSix span{
+    line-height: 6.8vh;
+}
+
+#contentImageWrapperrlOfSectionSix {
+    gap: 3vw;
+    inline-size: 100vw;
+    block-size: 70vh;
+    bottom: 3vh;
+    gap: 5vw;
+}
+
+#contentWrapperOfSectionSix {
+    padding-inline-start: 12.5vw;
+}
+
+#stickerLogoOfSectionSix {
+    position: absolute;
+    block-size: 90vh;
+}
+
+#smallSectionSix {
+    color: var(--lightYellow);
+}
+
+@media (orientation:portrait){
+    #contentWrapperOfSectionSix {
+        padding-inline-start: 0;
+    }
+
+    #contentWrapperrlOfSectionSix {
+        display: flex;
+        justify-content: center;
+    }
+
+    #headingTwoOfSectionSix{
+        display: flex;
+        justify-content: center;
+        inline-size: 80vw;
+        font-size: 6vh;
+    }
+
+    #headingTwoOfSectionSix span {
+        line-height: 4.25vh;
+        font-size: 5vh;
+    }
+
+    #sectionSix #regularParagraphOfSectionThree {
+    text-align: center;
+    margin-block-end: 5vh;
+    }
+    #sectionSix .actionButtonrl img {
+        block-size: 8vh;
+        margin-block-start: -0.5vh;
+    }
+    #headingTwoOfSectionSix img {
+        height: 30vh;
+        margin: 2vh 0vh;
+    }
+    #smallSectionSix {
+        font-size: 1.3vh;
+    }
+
+}

@@ -1,0 +1,32 @@
+#btnHeader {
+    display: none;
+}
+
+#btnHeader2 {
+    padding: 1.3vh 2vh;
+    font-size: 1.8vh;
+    position: fixed;
+    left: 88%;
+    bottom: 10vh;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+@media (orientation:portrait) {
+    /* #btnHeader {
+        display: block;
+        padding: 1vh 0.3vh;
+        font-size: 1.3vh;
+        inline-size: 35vmin;
+        position: fixed;
+        left: 50%;
+        top: 3vh;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    } */
+
+    #btnHeader2 {
+        display: none;
+    }
+}   
+

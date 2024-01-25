@@ -1,0 +1,27 @@
+#sectionTwo{
+    background: var(--lightYellow);
+}
+.headingTwo span{
+    color: var(--darkYellow);
+    line-height: 0.9;
+}
+
+#boldParagrahOfSectionTwo {
+    inline-size: 58vh;
+}
+
+
+@media (orientation:portrait) {
+    .imgWrapper img{
+        position: relative;
+        left: 5vw;
+        block-size: 50vh;
+    }
+
+    #boldParagrahOfSectionTwo {
+        text-align: center;
+        inline-size: 38vh;
+    }
+}
+
+

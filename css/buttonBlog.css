@@ -1,0 +1,44 @@
+.buttonBlog {
+    background-color: var(--lightYellow);
+    border-radius: 1vw;
+    color: var(--darkCyan);
+    font-family: var(--baseFontFamily);
+    font-size: 1.5vh;
+    font-weight: bold;
+    border: none;
+    inline-size: 10vh;
+    block-size: 3vh;
+    transition: color .3s ease;
+    /* margin-inline-end: 1rem; */
+}
+
+/* .buttonBlog:hover {
+    background-color: #FFEA96;
+    color: #0B3C45;
+    box-shadow: 
+    0 0 0.14vw #FFEA96,
+    0 0 0.42vw #FFEA96,
+    0 0 1.26vw #FFEA96,
+    0 0 1.26vw #FFEA96;
+    transition: box-shadow .3s ease-in-out;
+    cursor: pointer;
+}  */
+
+@media (orientation:portrait) {
+    .buttonBlog {
+        border-radius: 2vh;
+        font-size: 1.3vh;
+        inline-size: 7.5vh;
+        block-size: 2.4vh;
+    }
+    .buttonBlog.movile{
+        border-radius: 2vh;
+        inline-size: 14.5vh;
+        block-size: 4vh;
+        font-size: 2vh;
+    }
+    .buttonBlog:hover {
+        box-shadow:none;
+        background-color: var(--lightYellow);
+    }
+}

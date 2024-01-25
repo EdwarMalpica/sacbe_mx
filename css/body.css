@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../assets/fonts_iconos/icomoon.eot?4jumkd');
+    src:  url('../assets/fonts_iconos/icomoon.eot?4jumkd#iefix') format('embedded-opentype'),
+      url('../assets/fonts_iconos/icomoon.ttf?4jumkd') format('truetype'),
+      url('../assets/fonts_iconos/icomoon.woff?4jumkd') format('woff'),
+      url('../assets/fonts_iconos/icomoon.svg?4jumkd#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-icon_cotizar:before {
+    content: "\e904";
+    color: #fff6d2;
+  }
+  .icon-apple:before {
+    content: "\e902";
+  }
+  .icon-android:before {
+    content: "\e903";
+  }
+  .icon-x:before {
+    content: "\e901";
+  }
+  .icon-download:before {
+    content: "\e900";
+  }
+  
+body {
+    background: var(--darkCyan);
+    color: var(--darkCyan);
+    font: var(--baseText);
+    margin: 0;
+    font-family: var(--baseFontFamily);
+}
+
+#logoSacbe {
+    margin: 0;
+    padding: 0;
+}
+
+.colorYellow {
+    color: var(--darkYellow);
+}
+
+.textUppercase {
+    text-transform: uppercase;
+}
+
+.displayLandscape {
+    display: none;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menuLinkBlog {
+    line-height: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+  @keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} 
+
+@media (orientation:portrait) {
+    .displayPortrait {
+        display: none !important;
+    }
+
+    .displayLandscape {
+        display: block;
+    }
+}

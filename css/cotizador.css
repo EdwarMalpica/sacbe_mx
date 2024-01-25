@@ -1,0 +1,246 @@
+.open-btn {
+    cursor: pointer;
+}
+
+.popup {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    top: 0;
+    left:0;
+}
+
+.popup-overlay {
+    background-color: rgba(0, 0, 0, 0.575);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.bg-popup {
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    left: 0;
+    z-index: 2;
+    padding: 5vh 5vh;
+    background-image: url(../assets/img/bg_sacbePeople.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    /* background-attachment: scroll; */
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    transform: translateX(-100%);
+}
+
+.popup-content {
+    position: relative;
+    background-color: var(--lightYellow);
+    height: 70vh;
+    width: 60vh;
+    border-radius: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 3vh;
+    right: 3vh;
+    font-size: 2vh;
+    cursor: pointer;
+    transition: .5s ease all;
+    font-family: var(--baseFontFamily);
+    font-weight: bold;
+    color: var(--darkCyan);
+}
+
+.close-btn:hover {
+    color: var(--darkYellow);
+}
+
+.form-label {
+    font-family: var(--baseFontFamily);
+    font-weight: bold;
+    color: var(--darkCyan);
+    font-size: 2vh;
+    line-height: 0;
+}
+
+.form-label-marginTop {
+    margin-block-start: 3.5vh;
+}
+
+.mxInput {
+    padding-left: 25px !important;
+}
+
+.simbolo {
+    position: absolute;
+    left: 3.75vw;
+    font-family: var(--baseFontTitles);
+    font-weight: bold;
+    color: var(--darkCyan);
+    font-size: 3vh;
+    padding: 1vh;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-control {
+    font-family: var(--baseFontTitles);
+    font-weight: bold;
+    color: var(--darkCyan);
+    background-color: var(--lightYellow);
+    border: .2rem solid #CA8923;
+    font-size: 3vh;
+    inline-size: 80%;
+    padding: 1vh;
+    border-radius: .5vh;
+}
+
+.form-control::placeholder {
+    color: var(--darkCyan);
+}
+
+
+
+.titleModal {
+    text-align: center;
+    font-family: var(--baseFontTitles);
+    font-size: 7vh;
+    line-height: .8;
+    margin-top: 6vh;
+    color: var(--darkCyan);
+    margin-bottom: 3vh;
+}
+
+.Torange {
+    color: var(--darkYellow);
+}
+
+.smallText-calculator {
+    font-size: 1.2vh;
+    margin-inline: 3.4vw;
+    color: var(--darkCyan);
+}
+
+.smalltext-link:link, .smalltext-link:visited, .smalltext-link:active {
+    color: var(--darkYellow);
+    text-decoration: none;
+} 
+
+.input-group-prepend {
+    font-family: var(--baseFontTitles);
+    color: var(--lightYellow);
+    background-color: var(--darkYellow);
+    font-size: 3vh;
+    padding: 1.5vh;
+    inline-size: 15%;
+    text-align: center;
+    border-radius: 0.5vh;
+        margin-left: 1vh;
+}
+
+.changeDiner {
+    font-family: var(--baseFontFamily);
+    font-weight: bold;
+    color: var(--darkCyan);
+    font-size: 1.8vh;
+    line-height: .5;
+    margin: 0vh;
+}
+
+.mb-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    margin-inline: 3.4vw;
+    inline-size: 80%;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+@keyframes slide-in {
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@media (orientation: portrait) {
+    .popup-overlay {
+        display: none;
+    }
+
+    .bg-popup {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        padding: 0vh;
+        background-image: url(../assets/img/Glass-img.webp);
+    }
+
+    .popup-content {
+        width: 86vw;
+        height: 70vh;
+        padding-inline: 1vh;
+    }
+    .smallText-calculator br{
+        display: none;
+    }
+
+    .input-group-prepend {
+        padding-block: 1.5vh;
+        padding-inline: 2vw;
+        font-size: 3vh;
+    }
+
+    .form-label {
+        margin-inline-start: 0;
+    }
+
+    .mb-3 {
+        inline-size: 92%;
+    }
+
+    .smallText-calculator {
+        margin-inline: 3.4vw;
+        text-align: justify;
+    }
+    .simbolo{
+        left: 7vw;
+    }
+}

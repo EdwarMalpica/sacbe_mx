@@ -1,0 +1,137 @@
+#informePage, #informePage a{
+    color: var(--lightYellow);
+    font-family: var(--baseFontFamily);
+}
+
+#informePage #sectionThree {
+    background-color: var(--darkCyan);
+    display: block;
+    width: 72vw;
+    margin: 10vh auto;
+}
+.contentSectionInformacion {
+    padding-top: 60px;
+}
+.headerLegal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7vh;
+    -webkit-box-shadow: 0px 4px 4px -1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 4px 4px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 4px -1px rgba(0,0,0,0.15);
+}
+.headerLegal img{
+    width:auto;
+    height: 34vh;
+    margin-bottom: 5vh;
+}
+#informePage h1{
+    text-transform: uppercase;
+    font-family: var(--baseFontTitles);
+    font-size: 4.5vw;
+    line-height: .9;
+    letter-spacing: .5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.contentLegal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+}
+.contentLegal .column {
+    width: 35vw;
+    font-family: var(--baseFontTitles);
+    text-transform: uppercase;
+}
+.column .colorYellow {
+    font-size: 1.35rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: .25px;
+}
+.subTitleInforme {
+    font-size: 2.25vw;
+    text-transform: uppercase;
+    font-family: var(--baseFontTitles);
+    letter-spacing: .75px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 3vh;
+}
+.subListInforme li {
+    margin-right: 7vw;
+    padding-bottom: 1rem;
+}
+.contentLegal hr{
+    background: #FFF6D2;
+    border-bottom: 1px solid var(--lightYellow);
+    width: 85%;
+    text-align: left;
+    margin: 0;
+    height: 0;
+}
+#informePage a{
+    font-family: var(--baseFontTitles);
+    font-size: 1.5rem;
+    letter-spacing: .5px;
+    font-weight: 300;
+}
+
+#informePage a:hover{
+    color: var(--darkYellow);
+}
+.categoriasLegal {
+    padding: 1rem 0rem 2.5rem;
+}
+.categoriasLegal, .categoriasLegal ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.categoriasLegal h6 {
+    font-size: 1rem;
+    margin: 0rem;
+    color: var(--darkYellow);
+}
+.categoriasLegal ul li {
+    border-radius: 16.5px;
+    border: 1.5px solid var(--sacb-new-beige, #FFF6D2);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
+    padding: 5px 15px;
+    margin-left: 20px;
+    font-size: .85rem;
+}
+@media (orientation:portrait) {
+    .contentSectionInformacion {
+        padding-top: 6vh;
+        padding-bottom: 5vh;
+    }
+    .headerLegal,.contentLegal {
+        flex-direction: column;
+    }
+    #informePage #sectionThree{
+        width: 90vw;
+    }
+    .contentLegal .column {
+        width: 90vw;
+        margin-top: 5vh;
+     }
+     .headerLegal img {
+        width: auto;
+        height: 240px;
+    }
+    #informePage h1{
+        font-size: 8vw;
+        line-height: .9;
+        text-align: center;
+    }
+    .subTitleInforme {
+        font-size: 7.75vw;
+        margin-bottom: 1vh; 
+    }
+}

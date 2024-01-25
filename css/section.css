@@ -1,0 +1,241 @@
+@import './sectionOne.css';
+@import './sectionTwo.css';
+@import './sectionThree.css';
+@import './sectionFour.css';
+@import './sectionFive.css';
+@import './sectionSix.css';
+@import './sectionSeven.css';
+@import './sectionEight.css';
+@import './footer.css';
+@import './modal.css';
+@import './beneficiario.css';
+@import './floatDropdown.css';
+@import './dropdown.css';
+@import './cotizador.css';
+
+.section {
+    block-size: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Scroll adjust at begining */
+    scroll-snap-align: start;
+    position: relative;
+    overflow-x:hidden;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    block-size: 100vh;
+    scroll-behavior: smooth;
+}
+
+/* Heading 1 Styles */
+.headingOne {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--baseFontTitles);
+    font-weight: bold;
+    font-size: 16vh;
+    margin: 0;
+}
+
+/* Heading 2 Styles */
+.headingTwo {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--baseFontTitles);
+    font-weight: bold;
+    font-size: 9vh;
+    margin: 0;
+    color: var(--darkCyan);
+    line-height: 0.69;
+}
+
+.headingThree {
+    font-family: var(--baseFontTitles);
+    font-weight: bold;
+    font-size: 6vh;
+    margin: 0;
+    color: var(--darkCyan);
+    line-height: 0.9;
+}
+
+/* Content & Image Wrapper of the main information of section (left to right)*/
+.contentImageWrapperlr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    inline-size: 75vw;
+    block-size: 70vh;
+    position: relative;
+    bottom: 3vh;
+    gap: 5vw;
+}
+
+/* Content & Image Wrapper of the main information of section (right to left)*/
+.contentImageWrapperrl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    inline-size: 75vw;
+    block-size: 70vh;
+    position: relative;
+    bottom: 3vh;
+    gap: 5vw;
+}
+
+
+.veryImportantParagraph {
+    font-family: var(--baseFontTitles);
+    font-weight: bold;
+    font-size: 4vh;
+    line-height: .87;
+    letter-spacing: .5px;
+    margin: 0;
+    margin-block-end: 2vh;
+    inline-size: 54vh;
+}
+
+.regularParagraph {
+    font-family: var(--baseFontFamily);
+    font-weight: normal;
+    font-size: 2vh;
+    margin: 0;
+    margin-block-end: 2vh;
+    inline-size: 50vh;
+}
+
+.boldParagraph {
+    font-family: var(--baseFontFamily);
+    font-weight: bold;
+    font-size: 2vh;
+    margin: 0;
+    margin-block-end: 2vh;
+    inline-size: 50vh;
+}
+
+.importantParagraph {
+    font-family: var(--baseFontTitles);
+    font-weight: normal;
+    font-size: 2.5vh;
+    margin: 0;
+    inline-size: 50vh;
+    text-align: center;
+}
+
+.copyWrapper {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--darkCyan);
+    inline-size: 100vw;
+    block-size: 12vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy {
+    color: var(--lightYellow);
+    font-family: var(--baseFontTitles);
+    font-size: 7vh;
+}
+
+.actionButton {
+    display: none;
+}
+
+.actionButtonrl img {
+    block-size: 6vh;
+}
+
+@media (orientation:portrait) {
+    .section {
+        align-items: flex-end;
+        top: 17vh;
+    }
+
+    .contentWrapper {
+        padding: 0;
+        margin-block-end: 15vh;
+        align-items: center;
+    }
+
+    .contentWrapperrl {
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        padding: 0;
+        margin-block-start: 0;
+        align-items: center;
+    }
+
+    .imgWrapper img{
+        position: relative;
+        left: 3.4vw;
+        block-size: 40vh;
+    }
+
+    .headingOne {
+        align-items: center;
+        font-size: 9vh;
+    }
+
+    .headingTwo {
+        display: block;
+        text-align: center;
+        font-size: 7vh;
+        inline-size: 39vh;
+    }
+
+    .veryImportantParagraph {
+        text-align: center;
+        font-size: 2.8vh;
+        font-weight: bold;
+        inline-size: 28vh;
+    }
+
+    .boldParagraph {
+        padding: 0;
+        margin: 0;
+        font-size: 1.8vh;
+        align-items: center;
+    }
+
+    .contentImageWrapperlr {
+        flex-direction: column-reverse;
+        gap: 0;
+        right: 0;
+        top: 0vh;
+        inline-size: 85vw;
+    }
+
+    .contentImageWrapperrl {
+        flex-direction: column;
+        gap: 2vh;
+        right: 0;
+        top: -22vh;
+        bottom: 80vh;
+    }
+
+    .actionButton {
+        display: block;
+    }
+
+    .actionButton img {
+        block-size: 8vh;
+    }
+
+    .actionButtonrl {
+        display: block;
+    }
+
+    .actionButtonrl img {
+        block-size: 8vh;
+        margin-block-start: 1.5vh;
+    }
+}

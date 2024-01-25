@@ -1,0 +1,124 @@
+#beneficiarioOne{
+    block-size: 60vh;
+    bottom: 4vh;
+}
+#beneficiarioOne .contentWrapper{
+    align-items: flex-start;  
+}
+
+.headerOneBeneficiario{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--baseFontTitles);
+    font-weight: bold;
+    font-size: 6vh;
+    line-height: .85;
+    margin: 0;
+}
+#mainBeneficiario .cardStep h3{
+    font-family: var(--baseFontTitles);
+    font-size: 2.6vh;
+    line-height: .88;
+}
+
+.cardStep ul {
+    list-style: disc;
+    font-size: 2.5vh;
+    font-family: var(--baseFontTitles);
+}
+
+#beneficiarioOne h4{
+    font-size: 2vh;
+    line-height: 1;
+    margin: 0vh;
+}
+
+#beneficiarioOne p{
+    font-size: 1.5vh;
+    inline-size: 34vh;
+    margin-block-start: 1vh; 
+}
+
+#beneficiarioOne .imgWrapper img {
+    block-size: 60vh;
+}
+
+#mainBeneficiario #sectionFooter {
+    block-size: 160vh;
+}
+#mainBeneficiario #headingTwoOfSectionThree {
+    inline-size: 47vh;}
+
+#mainBeneficiario #contentWrapperOfSectionThree,
+#imgWrapperOfSectionBeneficiarios{
+    flex: 1 1 auto;
+}
+#imgWrapperOfSectionBeneficiarios img {
+    width: 84vh;
+    height: auto;
+    margin-left: -2vw;
+}
+
+#cardPasos {
+    display: flex;
+    flex-direction: row;
+    gap: 7vh;
+    align-items: flex-start;
+}
+.cardStep {
+    color: var(--lightYellow);
+    text-transform: uppercase;
+    font-size: 1.5vh;
+}
+
+
+@media (orientation:portrait) {
+    .headerOneBeneficiario{
+        font-size: 3.25vh;
+    }
+    #beneficiarioOne .contentWrapper {
+        align-items: center;
+        text-align: center;
+    }
+    #beneficiarioOne .imgWrapper img {
+        block-size: 40vh;
+        margin-block-end: 2vh;
+    }
+    #beneficiarioOne h4 {
+        font-size: 1.5vh;
+    }
+    .infoContact img {
+        height: 5vh;
+    }
+    #mainBeneficiario #sectionFooter {
+        block-size: 250vh;
+    }
+
+    #mainBeneficiario .infoContact br{
+        display: block;
+    }
+    #mainBeneficiario #headingTwoOfSectionThree {
+        inline-size: 27vh;
+        margin-block-start: 5vh;
+        margin-block-end: 4vh;
+    }
+    #imgWrapperOfSectionBeneficiarios {
+        overflow-x: scroll;
+        flex: none;
+        inline-size: 24vh;
+    }
+    #imgWrapperOfSectionBeneficiarios img {
+        width: 88vh;
+        height: auto;
+        margin-left: 1vw;
+    }
+    #cardPasos{
+        inline-size: 90vh; 
+        gap: 3vh;
+    }
+    .cardStep{
+        width: 60vw;
+        margin-left: 3vh;
+    }
+
+}

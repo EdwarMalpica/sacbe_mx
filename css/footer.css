@@ -1,0 +1,138 @@
+#sectionFooter {
+    block-size: 190vh;
+}
+footer {
+    padding: 2vh;
+    text-align: left;
+    color: #FFF7D2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    inline-size: 75vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row_footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+.row.footerLegal {
+    font-size: 1.6vh;
+}
+
+.footer_column_uno h5 {
+    font-size: 2.5vh;
+    color: #CA8923;
+    margin-block-start: 5vh;
+    margin-block-end: 0vh;
+}
+
+footer ul li a{
+    color: #FFF7D2;
+    font-size: 2vh;
+}
+
+.logo_footer {
+    width: 24vh;
+    height: auto;
+}
+
+.footer_column_uno {
+    flex: 1 1 auto;
+    margin-block-end: 2vh;
+}
+
+.footer_column_dos {
+    flex-basis: 100vw;
+    margin-bottom: 2vh;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.rowTwoFooter {
+    padding-block-start: 7vh;
+}
+hr{
+    border: 0px;
+    background: var(--darkYellow);
+    height: 0.14vh;
+    width: 100%;
+}
+
+.footer_column_dos p {
+    font-size: 2vh;
+    margin: 0px;
+}
+.footer_column_dos .text-center img {
+    height: 25vh;
+}
+.LogoTextFooter {
+    display: flex;
+    flex-flow: row;
+    align-items: middle;
+}
+.LogoTextFooter img{
+    margin-right: 1.5vw;
+}
+.footer_column_dos a{
+    color: var(--darkYellow);
+}
+.footer_column_dos a:hover{
+    color: var(--lightYellow);
+    font-weight: bold;
+}
+@media (orientation:portrait) {
+    #sectionFooter{
+        block-size: 257vh;
+    }
+
+    .footer-container{
+        inline-size: 85vw;
+    }
+    .footer_column_uno {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .footer_column_uno h5{
+        margin-block-start: 1vh;
+    }
+
+    .footer_column_dos img {
+        width: 100%;
+    }
+
+    .rowTwoFooter {
+        padding-block-start: 2vh;
+    }
+    .footer_column_dos img {
+        width: auto;
+        margin-block-start: 3.5vh;
+        padding-block-end: 4vh;
+    }
+
+    .footer_column_uno ul li br{
+        display: none;
+    }
+    .footer_column_dos p {
+        font-size: 1.52vh;
+    }
+    .footer_column_dos .text-center img {
+        height: 18vh;
+    }
+    .footer_column_dos .LogoTextFooter img {
+        width: auto;
+        margin-block-start: 1.5vh;
+        padding-block-end: 1vh;
+    }
+
+}

@@ -1,0 +1,108 @@
+.divCards{
+    position: relative;
+    top: 6vh;
+    right: 2vh;
+    block-size: 60vh;
+    padding: 0vh 2vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    padding-block-start: 14vh;
+}
+
+.card{
+    background: transparent;
+    border: 0px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    position: relative;
+    padding-block-start: 12vh;
+    margin-block-end: 7vh;
+}
+
+
+.divInfo {
+    background: #FFF6D2;
+    border-radius: 1.5vw;
+    color: #10454F;
+    width: 25vw;
+    height: auto;
+    font-family: var(--baseFontTitles);
+    text-align: center;
+    text-transform: uppercase;
+    padding-block-end: 7vh;
+    border: 1px solid #CA8923;
+}
+
+.divInfo h3 {
+    font-size: 7vh;
+    line-height: 1;
+    margin-block-end: 2vh;
+    margin-block-start: 4vh;
+}
+
+.iconDivInfo {
+    position: relative;
+}
+.iconDivInfo img{
+    position: absolute;
+    top: -9vh;
+    left: 17vh;
+    inline-size: 15vh;
+    block-size: auto;
+}
+.divFlex {
+    padding-block-start: 5vh;
+}
+
+.textCard {
+    width: 19vw;
+    margin: 0 auto;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+
+@media (orientation:portrait) {
+    .divCards{
+        right: 0vh;
+        padding-block-start: 0vh;
+        overflow-y: visible;
+        overflow-x: visible;
+    }
+    .card{
+        padding-block-start: 8vh;
+    }
+    .divInfo{
+        width: 80vw;
+        height: auto;
+        border-radius: 8vw;
+    }
+    .iconDivInfo img {
+        top: -9vh;
+        left: 24vw;
+        height: 15vh;
+    }
+    #contentImageWrapperrlOfSectionThree .textCard {
+        font-size: 3vh;
+        margin-block-start: 0vh;
+        inline-size: 30vh;
+        line-height: .8;
+    }
+    #headingTwoOfSectionEigth{
+        color: #FFF6D2;
+        font-size: 5.8vh;
+    }
+    .divInfo h3 {
+        font-size: 6vh;
+        line-height: 1;
+        margin-block-end: 2vh;
+        margin-block-start: 4vh;
+    }
+    #sectionEight .contentImageWrapperrl{
+        block-size: 80vh;
+    }
+    #sectionEight #regularParagraphOfSectionThree {
+        text-align: center;
+    }
+}

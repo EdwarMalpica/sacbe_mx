@@ -1,0 +1,45 @@
+#sectionOne{
+    background: var(--lightYellow);
+}
+
+.headingOne-firstLine {
+    color: var(--darkCyan);
+    line-height: 0.69;
+}
+
+.headingOne-secondLine {
+    color: var(--darkYellow);
+    line-height: 0.9;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-inline-start: 1em;
+    gap: 0.5em;
+}
+
+.sectionOne-downloadLinks {
+    display: flex;
+    gap: 1vh;
+}
+
+.sectionOne-downloadLinks img{
+    inline-size: 15vh;
+}
+
+.imgWrapper img{
+    block-size: 70vh;
+    cursor: pointer;
+}
+
+@media (orientation:portrait) {
+    .imgWrapper img{
+        block-size: 45vh;
+    }
+
+    .sectionOne-downloadLinks {
+        display: none;
+    }
+}
